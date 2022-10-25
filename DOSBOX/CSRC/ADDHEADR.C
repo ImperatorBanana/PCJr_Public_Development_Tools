@@ -1,4 +1,4 @@
-/* Program to PCJr Cartride Header/Footer from a ROM */
+/* Program to PCJr Cartridge Header/Footer from a ROM */
 #include <stdio.h>
 #include <string.h>
 
@@ -43,13 +43,13 @@ main(argc, argv, envp)
 	/* CODE */
 	fprintf(stderr,"PCJr Add JRC Header\n");
 	if ( argc != 3 ){
-		fprintf(stderr,"Arg $1: PCJr ROM file input w/o JRC (ROM.JRB)\n");
-		fprintf(stderr,"Arg $2: PCJr ROM file output w/o JRC (ROM.JRC)\n");
+		fprintf(stderr,"Arg $1: PCJr ROM file input w/o JRC (ROM.JRA)\n");
+		fprintf(stderr,"Arg $2: PCJr ROM file output w/o JRC (ROM.JRB)\n");
 		return 1;
 	}
 	
 	file_name = argv[1];
-	fprintf(stderr,"PCJr JRC Input ROM: %s\n",file_name);
+	fprintf(stderr,"PCJr Input Binary COM: %s\n",file_name);
 	output_file_name = argv[2];
 	fprintf(stderr,"PCJr Output Binary ROM: %s\n",output_file_name);
 	
